@@ -12,6 +12,7 @@ export interface SocialLink {
 export interface Project {
   slug: string;
   title: string;
+  label: string;
   category: string;
   summary: string;
   businessProblem: string;

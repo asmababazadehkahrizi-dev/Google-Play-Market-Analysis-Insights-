@@ -26,6 +26,9 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
             sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-700 ease-apple group-hover:scale-[1.04]"
           />
+          <span className="absolute left-3 top-3 rounded-full border border-line bg-paper/90 px-3 py-1 text-[11px] font-medium text-ink/70 backdrop-blur-sm dark:border-line-dark dark:bg-ink/90 dark:text-paper/70">
+            {project.label}
+          </span>
         </div>
         <div className="p-6">
           <p className="text-xs font-medium uppercase tracking-wide text-accent">

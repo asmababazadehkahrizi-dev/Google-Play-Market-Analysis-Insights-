@@ -56,9 +56,12 @@ export default function ProjectDetailPage({
 
           <div className="mt-8 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
-              <p className="text-sm font-medium uppercase tracking-widest text-accent">
-                {project.category}
-              </p>
+              <div className="flex flex-wrap items-center gap-3">
+                <p className="text-sm font-medium uppercase tracking-widest text-accent">
+                  {project.category}
+                </p>
+                <Badge>{project.label}</Badge>
+              </div>
               <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink dark:text-paper sm:text-5xl">
                 {project.title}
               </h1>
@@ -72,7 +75,7 @@ export default function ProjectDetailPage({
                 GitHub
               </Button>
               <Button href={project.demoUrl} external>
-                Live Demo
+                View Analysis
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </Button>
             </div>
