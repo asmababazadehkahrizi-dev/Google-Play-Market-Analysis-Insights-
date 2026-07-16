@@ -68,7 +68,12 @@ export function Hero() {
                 View Projects
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Button>
-              <Button href={site.resumeUrl} variant="secondary" size="lg" external>
+              <Button
+                href={site.resumeUrl}
+                variant="secondary"
+                size="lg"
+                download="Asma-Babazadehkahrizi-CV.pdf"
+              >
                 Download CV
                 <Download className="h-4 w-4" aria-hidden="true" />
               </Button>

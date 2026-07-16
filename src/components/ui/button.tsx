@@ -36,16 +36,37 @@ type ButtonAsLink = ButtonBaseProps &
   Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
     href: string;
     external?: boolean;
+    /** Force a same-origin file to save to disk instead of navigating/opening a tab.
+     * Pass a string to set the saved filename, or `true` to use the source filename. */
+    download?: string | boolean;
   };
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export function Button(props: ButtonProps) {
-  const { variant = "primary", size = "md", className, children } = props;
+  // Strip every internal/base prop here, once, so none of them can leak
+  // through the later `{...rest}` spreads onto the native <a>/<button>.
+  const { variant = "primary", size = "md", className, children, ...domProps } = props;
   const classes = cn(baseStyles, variantStyles[variant], sizeStyles[size], className);
 
-  if ("href" in props && props.href) {
-    const { href, external, ...rest } = props as ButtonAsLink;
+  if ("href" in domProps && domProps.href) {
+    const { href, external, download, ...rest } = domProps as Omit<
+      ButtonAsLink,
+      keyof ButtonBaseProps
+    >;
+
+    if (download) {
+      return (
+        <a
+          href={href}
+          className={classes}
+          download={download === true ? "" : download}
+          {...rest}
+        >
+          {children}
+        </a>
+      );
+    }
     if (external) {
       return (
         <a
@@ -66,7 +87,7 @@ export function Button(props: ButtonProps) {
     );
   }
 
-  const { ...rest } = props as ButtonAsButton;
+  const rest = domProps as Omit<ButtonAsButton, keyof ButtonBaseProps>;
   return (
     <button className={classes} {...rest}>
       {children}
