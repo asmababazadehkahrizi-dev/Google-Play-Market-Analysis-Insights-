@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+    
+  <rect width="1200" height="750" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="56" fill="#fafafa"/>
+  <line x1="0" y1="56" x2="1200" y2="56" stroke="#e5e5e5" stroke-width="1"/>
+  <circle cx="28" cy="28" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="28" r="6" fill="#28c840"/>
+  <text x="600" y="33" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8a8a8e">HR Analytics Dashboard — Power BI</text>
+  
+    
+  <g>
+    <rect x="40" y="84" width="260" height="96" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="60" y="114" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Headcount</text>
+    <text x="60" y="144" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">1,284</text>
+    <text x="60" y="166" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1a9d4c">+4.2% QoQ</text>
+  </g>
+    
+  <g>
+    <rect x="316" y="84" width="260" height="96" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="336" y="114" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Attrition Rate</text>
+    <text x="336" y="144" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">8.6%</text>
+    <text x="336" y="166" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1a9d4c">-1.3pp</text>
+  </g>
+    
+  <g>
+    <rect x="592" y="84" width="260" height="96" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="612" y="114" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Avg. Tenure</text>
+    <text x="612" y="144" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">3.4 yrs</text>
+    <text x="612" y="166" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#1a9d4c">+0.2 yrs</text>
+  </g>
+    
+  <g>
+    <rect x="868" y="84" width="292" height="96" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="888" y="114" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Open Roles</text>
+    <text x="888" y="144" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">37</text>
+    <text x="888" y="166" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#d13c2f">-6 vs LM</text>
+  </g>
+    <rect x="40" y="204" width="700" height="330" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="64" y="238" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0a0a0a">Trend over time</text>
+    
+  <g>
+    <path d="M64.0,370.6 L98.3,340.4 L132.6,348.0 L166.9,367.8 L201.3,379.7 L235.6,358.5 L269.9,372.6 L304.2,378.4 L338.5,354.5 L372.8,359.6 L407.2,347.1 L441.5,320.7 L475.8,287.4 L510.1,281.2 L544.4,288.8 L578.7,286.8 L613.1,285.2 L647.4,275.0 L681.7,285.2 L716.0,260.6 L716,510 L64,510 Z" fill="#0071e3" opacity="0.08"/>
+    <path d="M64.0,370.6 L98.3,340.4 L132.6,348.0 L166.9,367.8 L201.3,379.7 L235.6,358.5 L269.9,372.6 L304.2,378.4 L338.5,354.5 L372.8,359.6 L407.2,347.1 L441.5,320.7 L475.8,287.4 L510.1,281.2 L544.4,288.8 L578.7,286.8 L613.1,285.2 L647.4,275.0 L681.7,285.2 L716.0,260.6" fill="none" stroke="#0071e3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="64.0" cy="370.6" r="2.5" fill="#0071e3"/><circle cx="98.3" cy="340.4" r="2.5" fill="#0071e3"/><circle cx="132.6" cy="348.0" r="2.5" fill="#0071e3"/><circle cx="166.9" cy="367.8" r="2.5" fill="#0071e3"/><circle cx="201.3" cy="379.7" r="2.5" fill="#0071e3"/><circle cx="235.6" cy="358.5" r="2.5" fill="#0071e3"/><circle cx="269.9" cy="372.6" r="2.5" fill="#0071e3"/><circle cx="304.2" cy="378.4" r="2.5" fill="#0071e3"/><circle cx="338.5" cy="354.5" r="2.5" fill="#0071e3"/><circle cx="372.8" cy="359.6" r="2.5" fill="#0071e3"/><circle cx="407.2" cy="347.1" r="2.5" fill="#0071e3"/><circle cx="441.5" cy="320.7" r="2.5" fill="#0071e3"/><circle cx="475.8" cy="287.4" r="2.5" fill="#0071e3"/><circle cx="510.1" cy="281.2" r="2.5" fill="#0071e3"/><circle cx="544.4" cy="288.8" r="2.5" fill="#0071e3"/><circle cx="578.7" cy="286.8" r="2.5" fill="#0071e3"/><circle cx="613.1" cy="285.2" r="2.5" fill="#0071e3"/><circle cx="647.4" cy="275.0" r="2.5" fill="#0071e3"/><circle cx="681.7" cy="285.2" r="2.5" fill="#0071e3"/><circle cx="716.0" cy="260.6" r="2.5" fill="#0071e3"/>
+    <line x1="64" y1="510" x2="716" y2="510" stroke="#e5e5e5" stroke-width="1"/>
+  </g>
+    <rect x="760" y="204" width="400" height="330" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="784" y="238" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0a0a0a">Breakdown</text>
+    <g><path d="M960,400 L960.0,290.0 A110,110 0 0 1 1035.3,480.2 Z" fill="#0071e3" opacity="0.85"/><path d="M960,400 L1035.3,480.2 A110,110 0 0 1 871.0,464.7 Z" fill="#0a0a0a" opacity="0.85"/><path d="M960,400 L871.0,464.7 A110,110 0 0 1 871.0,335.3 Z" fill="#8a8a8e" opacity="0.85"/><path d="M960,400 L871.0,335.3 A110,110 0 0 1 960.0,290.0 Z" fill="#c7ddf7" opacity="0.85"/><circle cx="960" cy="400" r="63.8" fill="#ffffff"/></g>
+    <rect x="40" y="554" width="1120" height="150" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="64" y="588" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0a0a0a">By department</text>
+    <g><rect x="64.0" y="608.0" width="82.0" height="76.0" rx="4" fill="#0071e3" opacity="0.35"/><rect x="154.0" y="617.7" width="82.0" height="66.3" rx="4" fill="#0071e3" opacity="0.3958333333333333"/><rect x="244.0" y="611.5" width="82.0" height="72.5" rx="4" fill="#0071e3" opacity="0.44166666666666665"/><rect x="334.0" y="625.9" width="82.0" height="58.1" rx="4" fill="#0071e3" opacity="0.4875"/><rect x="424.0" y="612.3" width="82.0" height="71.7" rx="4" fill="#0071e3" opacity="0.5333333333333333"/><rect x="514.0" y="648.7" width="82.0" height="35.3" rx="4" fill="#0071e3" opacity="0.5791666666666666"/><rect x="604.0" y="609.7" width="82.0" height="74.3" rx="4" fill="#0071e3" opacity="0.625"/><rect x="694.0" y="639.7" width="82.0" height="44.3" rx="4" fill="#0071e3" opacity="0.6708333333333334"/><rect x="784.0" y="636.2" width="82.0" height="47.8" rx="4" fill="#0071e3" opacity="0.7166666666666667"/><rect x="874.0" y="648.1" width="82.0" height="35.9" rx="4" fill="#0071e3" opacity="0.7625"/><rect x="964.0" y="620.6" width="82.0" height="63.4" rx="4" fill="#0071e3" opacity="0.8083333333333333"/><rect x="1054.0" y="606.7" width="82.0" height="77.3" rx="4" fill="#0071e3" opacity="0.8541666666666666"/><line x1="64" y1="684" x2="1136" y2="684" stroke="#e5e5e5" stroke-width="1"/></g>
+  </svg>

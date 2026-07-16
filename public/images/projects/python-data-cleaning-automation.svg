@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+    
+  <rect width="1200" height="750" fill="#ffffff"/>
+  <rect x="0" y="0" width="1200" height="56" fill="#fafafa"/>
+  <line x1="0" y1="56" x2="1200" y2="56" stroke="#e5e5e5" stroke-width="1"/>
+  <circle cx="28" cy="28" r="6" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="6" fill="#febc2e"/>
+  <circle cx="68" cy="28" r="6" fill="#28c840"/>
+  <text x="600" y="33" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#8a8a8e">Python Data Cleaning Pipeline</text>
+  
+    <rect x="40" y="80" width="1120" height="360" rx="14" fill="#0a0a0a"/>
+    <circle cx="70" cy="104" r="5" fill="#ff5f57"/>
+    <circle cx="88" cy="104" r="5" fill="#febc2e"/>
+    <circle cx="106" cy="104" r="5" fill="#28c840"/>
+    <text x="72" y="108" font-family="Menlo, Consolas, monospace" font-size="14" fill="#0071e3">import pandas as pd</text><text x="72" y="134" font-family="Menlo, Consolas, monospace" font-size="14" fill="transparent"></text><text x="72" y="160" font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a1a1a">def clean_dataset(df: pd.DataFrame) -> pd.DataFrame:</text><text x="72" y="186" font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a9d4c">    df = df.drop_duplicates()</text><text x="72" y="212" font-family="Menlo, Consolas, monospace" font-size="14" fill="#c7ddf7">    df['date'] = pd.to_datetime(df['date'], errors='coerce')</text><text x="72" y="238" font-family="Menlo, Consolas, monospace" font-size="14" fill="#0071e3">    df['category'] = df['category'].str.strip().str.title()</text><text x="72" y="264" font-family="Menlo, Consolas, monospace" font-size="14" fill="#8a8a8e">    df = df.dropna(subset=['id', 'date'])</text><text x="72" y="290" font-family="Menlo, Consolas, monospace" font-size="14" fill="#1a1a1a">    return df.reset_index(drop=True)</text><text x="72" y="316" font-family="Menlo, Consolas, monospace" font-size="14" fill="transparent"></text><text x="72" y="342" font-family="Menlo, Consolas, monospace" font-size="14" fill="#c7ddf7">report = validate(df_clean)</text><text x="72" y="368" font-family="Menlo, Consolas, monospace" font-size="14" fill="#0071e3">print(f'Rows cleaned: {len(df_clean)} / {len(df_raw)}')</text>
+    <rect x="40" y="460" width="360" height="120" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="64" y="494" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Rows processed</text>
+    <text x="64" y="524" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">48,213</text>
+    <rect x="420" y="460" width="360" height="120" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="444" y="494" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Errors flagged</text>
+    <text x="444" y="524" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">312</text>
+    <rect x="800" y="460" width="360" height="120" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="824" y="494" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#8a8a8e">Runtime</text>
+    <text x="824" y="524" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a0a0a">2.4s</text>
+    <rect x="40" y="604" width="1120" height="100" rx="14" fill="#ffffff" stroke="#e5e5e5" stroke-width="1.5"/>
+    <text x="64" y="638" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0a0a0a">Data quality trend</text>
+    
+  <g>
+    <path d="M64.0,668.2 L120.4,665.5 L176.8,666.7 L233.3,665.3 L289.7,660.8 L346.1,659.6 L402.5,659.0 L458.9,660.6 L515.4,663.4 L571.8,662.1 L628.2,663.3 L684.6,662.3 L741.1,664.5 L797.5,664.9 L853.9,668.1 L910.3,663.8 L966.7,658.6 L1023.2,660.1 L1079.6,655.1 L1136.0,655.4 L1136,688 L64,688 Z" fill="#1a9d4c" opacity="0.08"/>
+    <path d="M64.0,668.2 L120.4,665.5 L176.8,666.7 L233.3,665.3 L289.7,660.8 L346.1,659.6 L402.5,659.0 L458.9,660.6 L515.4,663.4 L571.8,662.1 L628.2,663.3 L684.6,662.3 L741.1,664.5 L797.5,664.9 L853.9,668.1 L910.3,663.8 L966.7,658.6 L1023.2,660.1 L1079.6,655.1 L1136.0,655.4" fill="none" stroke="#1a9d4c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="64.0" cy="668.2" r="2.5" fill="#1a9d4c"/><circle cx="120.4" cy="665.5" r="2.5" fill="#1a9d4c"/><circle cx="176.8" cy="666.7" r="2.5" fill="#1a9d4c"/><circle cx="233.3" cy="665.3" r="2.5" fill="#1a9d4c"/><circle cx="289.7" cy="660.8" r="2.5" fill="#1a9d4c"/><circle cx="346.1" cy="659.6" r="2.5" fill="#1a9d4c"/><circle cx="402.5" cy="659.0" r="2.5" fill="#1a9d4c"/><circle cx="458.9" cy="660.6" r="2.5" fill="#1a9d4c"/><circle cx="515.4" cy="663.4" r="2.5" fill="#1a9d4c"/><circle cx="571.8" cy="662.1" r="2.5" fill="#1a9d4c"/><circle cx="628.2" cy="663.3" r="2.5" fill="#1a9d4c"/><circle cx="684.6" cy="662.3" r="2.5" fill="#1a9d4c"/><circle cx="741.1" cy="664.5" r="2.5" fill="#1a9d4c"/><circle cx="797.5" cy="664.9" r="2.5" fill="#1a9d4c"/><circle cx="853.9" cy="668.1" r="2.5" fill="#1a9d4c"/><circle cx="910.3" cy="663.8" r="2.5" fill="#1a9d4c"/><circle cx="966.7" cy="658.6" r="2.5" fill="#1a9d4c"/><circle cx="1023.2" cy="660.1" r="2.5" fill="#1a9d4c"/><circle cx="1079.6" cy="655.1" r="2.5" fill="#1a9d4c"/><circle cx="1136.0" cy="655.4" r="2.5" fill="#1a9d4c"/>
+    <line x1="64" y1="688" x2="1136" y2="688" stroke="#e5e5e5" stroke-width="1"/>
+  </g>
+  </svg>

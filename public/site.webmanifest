@@ -1,0 +1,16 @@
+{
+  "name": "Asma Babazadehkahrizi — Data Analyst",
+  "short_name": "Asma B.",
+  "description": "Portfolio of Asma Babazadehkahrizi, Data Analyst specialising in Power BI, SQL, and Python.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

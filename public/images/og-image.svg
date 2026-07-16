@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="glow" cx="20%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#e8f2fd"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#e5e5e5" stroke-width="2"/>
+  <text x="80" y="260" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#0a0a0a">Asma Babazadehkahrizi</text>
+  <text x="80" y="320" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#0071e3" font-weight="600">Data Analyst — Power BI · SQL · Python</text>
+  <text x="80" y="370" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#6b6b6f">London, United Kingdom</text>
+  <g transform="translate(80,420)">
+    <rect x="0" y="0" width="150" height="44" rx="22" fill="#0a0a0a"/>
+    <text x="75" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="600">Portfolio</text>
+  </g>
+</svg>
