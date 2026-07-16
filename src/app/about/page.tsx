@@ -28,7 +28,7 @@ export default function AboutPage() {
               <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-line bg-paper-soft dark:border-line-dark dark:bg-ink-soft">
                 <Image
                   src="/images/profile-placeholder.svg"
-                  alt={`Portrait of ${site.name}`}
+                  alt={`${site.name} monogram`}
                   fill
                   sizes="320px"
                   className="object-cover"

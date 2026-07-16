@@ -41,7 +41,7 @@ export const navLinks: NavLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/asmababazadehkahrizi",
+    href: "https://linkedin.com/in/asma-babazadeh-955663246",
     icon: "linkedin",
   },
   {

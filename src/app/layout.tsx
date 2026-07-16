@@ -62,7 +62,7 @@ const personJsonLd = {
     addressCountry: "GB",
   },
   sameAs: [
-    "https://www.linkedin.com/in/asmababazadehkahrizi",
+    "https://linkedin.com/in/asma-babazadeh-955663246",
     "https://github.com/asmababazadehkahrizi-dev",
   ],
   knowsAbout: [

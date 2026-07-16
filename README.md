@@ -31,11 +31,22 @@ timeline, skill bars) is hand-built and lives in `src/components/ui`.
 
 ```
 .
+├── projects/                    # 6 standalone "Personal Data Analytics Project"
+│   │                              case studies — real public datasets, real
+│   │                              Python/SQL analysis, real chart output.
+│   │                              See "The /projects folder" below.
+│   ├── hr-analytics-dashboard/
+│   ├── recruitment-analytics-dashboard/
+│   ├── sales-performance-dashboard/
+│   ├── customer-analytics-dashboard/
+│   ├── python-data-cleaning-automation/
+│   └── sql-business-intelligence-analysis/
 ├── public/
 │   ├── documents/              # Downloadable CV + supplementary PDFs
 │   ├── images/
-│   │   ├── projects/           # Project screenshot placeholders (SVG)
-│   │   ├── profile-placeholder.svg
+│   │   ├── projects/           # Real dashboard chart exports (copied from
+│   │   │                         projects/*/charts/), used on the site
+│   │   ├── profile-placeholder.svg   # Monogram placeholder (no photo yet)
 │   │   └── og-image.svg        # Social share image
 │   ├── favicon.svg
 │   ├── apple-touch-icon.svg
@@ -83,6 +94,43 @@ timeline, skill bars) is hand-built and lives in `src/components/ui`.
 
 ---
 
+## The `/projects` folder
+
+The six portfolio projects are **real, working analyses**, not filler copy.
+Each one lives in its own folder at the repo root (separate from the Next.js
+app in `src/`) with an identical, self-contained structure:
+
+```
+projects/<slug>/
+├── README.md          # business problem, approach, real insights, recommendations
+├── data/raw/           # the original public dataset
+├── data/cleaned/        # cleaned output + SQLite database
+├── python/                # cleaning/analysis scripts (reproducible, no notebooks required)
+├── sql/                    # queries.sql + sample_results.md (real output from a real run)
+├── powerbi/                 # data model + DAX measures, documented
+└── charts/                    # PNG dashboard exports, also copied into public/images/projects/
+```
+
+Every number in every project README was computed by actually running the
+scripts in that project against the real public dataset — nothing is
+invented. Two projects (`customer-analytics-dashboard`,
+`sales-performance-dashboard`) work with datasets too large to commit in
+full; their `.gitignore` and README explain how to regenerate the full data
+locally via a `download_data.py` script.
+
+Each project is explicitly labeled **"Personal Data Analytics Project"** on
+the site and in its own README — these are practice projects built to
+demonstrate technique on public data, not client or employer work.
+
+**Why aren't there `.pbix` files?** Power BI Desktop is Windows-only
+software and wasn't available in the environment these projects were built
+in. Each project's `powerbi/data-model.md` documents the exact data model
+and DAX measures instead, ready to paste into Power BI Desktop against the
+project's cleaned CSV — and the site shows genuine interactive-style chart
+exports built from the same real analysis in the meantime.
+
+---
+
 ## Getting Started
 
 **Requirements:** Node.js 18.18+ (Node 20/22 recommended), npm.
@@ -119,18 +167,22 @@ required, and no need to touch component code to update copy:
 - `data/experience.ts` — career timeline
 - `data/education.ts` — degrees and certifications
 
-### Replacing placeholder assets
+### What's real vs. still a placeholder
 
-This repo ships with generated **placeholders** so the site is fully
-functional out of the box. Before publishing, replace:
-
-- `public/images/profile-placeholder.svg` → a real professional photo
-- `public/images/projects/*.svg` → real dashboard screenshots (export from
-  Power BI / Tableau, save as `.png` or `.webp`, and update the `image` /
-  `gallery` fields in `src/data/projects.ts`)
-- `public/documents/Asma-Babazadehkahrizi-CV.pdf` → your real CV
-- `public/images/og-image.svg` → a designed social share card
-- Update `src/data/site.ts` with your real LinkedIn/GitHub URLs
+- **Project case studies, charts, SQL, and insights** — real. See
+  "The `/projects` folder" above.
+- **Social links** — real (`src/data/site.ts`): LinkedIn and GitHub point to
+  the actual profiles.
+- **Profile photo** — still a monogram placeholder
+  (`public/images/profile-placeholder.svg`) by design, until a real photo is
+  supplied. Swap the file and update the `alt` text in `hero.tsx` and
+  `about/page.tsx` when ready.
+- **CV / resume** (`public/documents/Asma-Babazadehkahrizi-CV.pdf`) — still a
+  placeholder PDF. Replace it with a real CV export, and update
+  `experience.ts` / `education.ts` / the About page copy to match it exactly
+  once available.
+- **OG image** (`public/images/og-image.svg`) — a simple placeholder social
+  share card; swap for a designed one before publishing widely.
 
 ### Contact form
 
@@ -228,6 +280,9 @@ feat: build skills, experience and education pages
 feat: build contact page with validated form and API route
 feat: add SEO metadata, sitemap, robots and structured data
 chore: add placeholder screenshots, profile photo and favicon
+feat: build HR analytics, recruitment, and sales personal data projects
+feat: build customer analytics, data cleaning, and SQL BI personal data projects
+feat: replace placeholder project copy and screenshots with real analysis
 chore: configure Vercel deployment and environment variables
 docs: add README with setup and deployment instructions
 ```

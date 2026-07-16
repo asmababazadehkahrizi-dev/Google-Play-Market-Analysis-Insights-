@@ -113,7 +113,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-line bg-paper-soft shadow-[0_30px_80px_-30px_rgba(0,0,0,0.25)] dark:border-line-dark dark:bg-ink-soft">
               <Image
                 src="/images/profile-placeholder.svg"
-                alt={`Portrait of ${site.name}`}
+                alt={`${site.name} monogram`}
                 fill
                 priority
                 sizes="(min-width: 1024px) 384px, 320px"
