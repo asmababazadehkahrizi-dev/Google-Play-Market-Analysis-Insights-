@@ -3,27 +3,27 @@ import { NavLink, SocialLink } from "@/types";
 export const site = {
   name: "Asma Babazadehkahrizi",
   firstName: "Asma",
-  title: "Data Analyst",
+  title: "Commercial Data Analyst",
   tagline: "Data Analyst | Power BI | SQL | Python | Mechanical Engineer",
   location: "London, United Kingdom",
   email: "asma.babazadehkahrizi@gmail.com",
   url: "https://asmababazadehkahrizi.com",
   description:
-    "Data Analyst based in London specialising in Power BI, SQL, and Python — turning complex, ambiguous data into clear business decisions. Mechanical Engineering background with a Data Analytics diploma from BrainStation.",
+    "Commercial Data Analyst based in London with hands-on experience building dashboards and using SQL and Power Query to extract, consolidate, and analyse data for revenue, pricing, and performance reporting. Mechanical Engineering background with a Data Analytics Graduate Certificate from BrainStation.",
   shortBio:
-    "I help organisations make faster, evidence-based decisions by designing dashboards, automating data pipelines, and translating raw data into a story stakeholders can act on.",
+    "I build dashboards and use SQL and Power Query to extract, consolidate, and analyse data for revenue, pricing, and performance reporting — turning commercial data into recommendations stakeholders can act on.",
   heroHeadline: "Turning data into decisions.",
   heroSubheadline:
-    "Data Analyst in London building dashboards, pipelines, and insights that help teams move faster — powered by Power BI, SQL, and Python.",
+    "Commercial Data Analyst in London building dashboards and reporting with Power BI, Power Query, SQL, and Python — for revenue, pricing, and performance analysis.",
   resumeUrl: "/documents/Asma-Babazadehkahrizi-CV.pdf",
   keywords: [
     "Asma Babazadehkahrizi",
-    "Data Analyst London",
+    "Commercial Data Analyst London",
     "Power BI Developer",
     "SQL Analyst",
+    "Power Query",
     "Python Data Analyst",
     "Mechanical Engineer to Data Analyst",
-    "HR Analytics Dashboard",
     "Data Visualization Portfolio",
   ],
 };

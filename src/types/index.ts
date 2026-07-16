@@ -28,10 +28,7 @@ export interface Project {
 
 export interface SkillCategory {
   category: string;
-  skills: {
-    name: string;
-    level: number;
-  }[];
+  skills: string[];
 }
 
 export interface ExperienceItem {

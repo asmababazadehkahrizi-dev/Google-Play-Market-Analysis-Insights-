@@ -1,46 +1,49 @@
 import { ExperienceItem } from "@/types";
 
+// Sourced directly from Asma's CV.
 export const experience: ExperienceItem[] = [
   {
-    role: "Data Analyst",
-    company: "Freelance / Independent Projects",
+    role: "Commercial Retail Associate (Via Agency)",
+    company: "Jimmy Choo",
     location: "London, United Kingdom",
-    period: "2024 — Present",
+    period: "Mar 2026 — Present",
     current: true,
     description:
-      "Delivering end-to-end analytics projects for small businesses and portfolio clients, from raw data to decision-ready dashboards.",
+      "Flexible, contract-basis client service and operational support within a luxury retail environment.",
     highlights: [
-      "Designed and shipped 6+ Power BI and SQL dashboards covering HR, recruitment, sales, and customer analytics",
-      "Built Python-based ETL pipelines to automate recurring data-cleaning and reporting work",
-      "Translated ambiguous business questions into clear, testable analytical requirements",
+      "Provide flexible, premium client service and operational support on a contract basis within luxury retail environments",
+      "Utilise in-store inventory systems to monitor stock levels and ensure accurate data tracking against daily sales targets",
+      "Maintain strong, professional communication in fast-paced, client-facing settings, effectively managing ambiguity",
     ],
   },
   {
-    role: "Data Analytics Diploma",
-    company: "BrainStation",
+    role: "Data Analyst",
+    company: "Entralon Real Estate",
     location: "London, United Kingdom",
-    period: "2023 — 2024",
+    period: "Feb 2024 — Mar 2026",
     current: false,
     description:
-      "Intensive, project-based diploma covering the full analytics lifecycle — from data wrangling to visualization and stakeholder storytelling.",
+      "Built and maintained BI dashboards for monthly and ad hoc commercial reporting, consolidating data from multiple sources into a single source of truth for senior stakeholders.",
     highlights: [
-      "Completed applied projects in SQL, Python (pandas, NumPy), and Power BI / Tableau",
-      "Built a capstone dashboard project analysing real-world business data end-to-end",
-      "Practised presenting data-driven recommendations to non-technical stakeholders",
+      "Built and maintained BI dashboards, using Power Query and SQL to extract and consolidate data from multiple sources for monthly and ad hoc commercial reporting cycles",
+      "Analysed sales, revenue, and operational data to identify trends and inform business decisions, delivering insights — not just outputs — to senior stakeholders",
+      "Cleaned, structured, and validated complex data from multiple sources to ensure accuracy and a single source of truth for reporting",
+      "Partnered with senior stakeholders to move reporting from manual processes toward clearer, more consistent, dashboard-led insight",
+      "Managed inbound analytics requests independently, prioritising competing demands in a fast-paced environment",
     ],
   },
   {
-    role: "Mechanical Engineer",
-    company: "Engineering Sector Roles",
-    location: "United Kingdom",
-    period: "2019 — 2023",
+    role: "Commercial Analyst Intern",
+    company: "RAAK Hydraulic",
+    location: "London, United Kingdom",
+    period: "Jan 2023 — Feb 2024",
     current: false,
     description:
-      "Worked across mechanical engineering projects, developing a strong foundation in analytical problem-solving, process optimisation, and quantitative rigor that now underpins my analytics work.",
+      "Pricing, cost, and profitability analysis across products to support commercial decision-making, alongside finance and reporting support.",
     highlights: [
-      "Applied engineering analysis and root-cause methodology to process and quality problems",
-      "Used Excel extensively for technical calculations, tolerance analysis, and reporting",
-      "Built the analytical discipline that later motivated a transition into data analytics",
+      "Conducted pricing, cost, and profitability analysis across products to support commercial decision-making and revenue growth",
+      "Supported finance and commercial teams through cost tracking, invoice management, and financial reporting activities",
+      "Performed reconciliation and validation of operational and financial records to improve reporting accuracy",
     ],
   },
 ];

@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { AnimatedBackground } from "@/components/home/animated-background";
 import { site } from "@/data/site";
+import { skillList } from "@/data/skills";
+import { projects } from "@/data/projects";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -86,13 +88,13 @@ export function Hero() {
               <div>
                 <dt className="text-sm text-ink/50 dark:text-paper/50">Projects</dt>
                 <dd className="mt-1 text-2xl font-semibold text-ink dark:text-paper">
-                  6+
+                  {projects.length}
                 </dd>
               </div>
               <div>
-                <dt className="text-sm text-ink/50 dark:text-paper/50">Core tools</dt>
+                <dt className="text-sm text-ink/50 dark:text-paper/50">Skills</dt>
                 <dd className="mt-1 text-2xl font-semibold text-ink dark:text-paper">
-                  15
+                  {skillList.length}
                 </dd>
               </div>
               <div>

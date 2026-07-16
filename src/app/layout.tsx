@@ -69,8 +69,9 @@ const personJsonLd = {
     "Power BI",
     "SQL",
     "Python",
+    "Tableau",
+    "Power Query",
     "Data Analytics",
-    "Data Visualization",
     "Mechanical Engineering",
   ],
   alumniOf: [

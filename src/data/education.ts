@@ -1,33 +1,28 @@
 import { EducationItem } from "@/types";
 
+// Sourced directly from Asma's CV.
 export const education: EducationItem[] = [
   {
     institution: "BrainStation",
-    credential: "Diploma",
+    credential: "Data Analytics Graduate Certificate",
     field: "Data Analytics",
-    period: "2023 — 2024",
+    period: "2025",
     location: "London, United Kingdom",
     description:
-      "A rigorous, industry-aligned diploma focused on practical data analytics skills — SQL, Python, statistics, and business intelligence tooling — culminating in a capstone dashboard project.",
+      "A graduate certificate focused on practical data analytics skills — SQL, Python, and BI tooling for reporting and segmentation.",
     highlights: [
-      "SQL for data extraction, transformation, and analysis",
-      "Python (pandas, NumPy, matplotlib) for data wrangling and analysis",
-      "Power BI and Tableau for dashboard design and storytelling",
-      "Statistical foundations for descriptive and inferential analysis",
+      "Handled large, complex datasets using SQL for retrieval and analysis, and Python for data manipulation and automation",
+      "Built interactive reporting solutions in Power BI and Tableau, focusing on customer segmentation and trend analysis",
     ],
   },
   {
     institution: "London South Bank University",
-    credential: "BEng (Hons)",
+    credential: "BEng",
     field: "Mechanical Engineering",
-    period: "2016 — 2019",
+    period: "2021 — 2024",
     location: "London, United Kingdom",
     description:
-      "A rigorous engineering degree building strong foundations in mathematics, quantitative analysis, and structured problem-solving — the analytical backbone of my current data career.",
-    highlights: [
-      "Applied mathematics, statistics, and quantitative modelling",
-      "Engineering design projects requiring data-driven decision-making",
-      "Strong grounding in root-cause analysis and process optimisation",
-    ],
+      "An engineering degree building foundations in quantitative analysis and structured problem-solving that underpin her current commercial analytics work.",
+    highlights: [],
   },
 ];

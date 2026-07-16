@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Education",
   description:
-    "Educational background of Asma Babazadehkahrizi: Data Analytics diploma from BrainStation and BEng Mechanical Engineering from London South Bank University.",
+    "Educational background of Asma Babazadehkahrizi: Data Analytics Graduate Certificate from BrainStation and BEng Mechanical Engineering from London South Bank University.",
   path: "/education",
 });
 

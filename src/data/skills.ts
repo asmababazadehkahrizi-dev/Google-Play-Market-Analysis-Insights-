@@ -1,52 +1,40 @@
 import { SkillCategory } from "@/types";
 
+// Sourced directly from Asma's CV — grouped exactly as listed there.
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Business Intelligence",
+    category: "Technical Skills",
     skills: [
-      { name: "Power BI", level: 95 },
-      { name: "DAX", level: 90 },
-      { name: "Power Query", level: 90 },
-      { name: "Tableau", level: 80 },
-      { name: "Dashboard Design", level: 92 },
+      "Tableau (Dashboard Development)",
+      "SQL (Data Extraction & Querying)",
+      "Power BI",
+      "Power Query",
+      "Advanced Excel (PivotTables, Modelling)",
     ],
   },
   {
-    category: "Data & Programming",
+    category: "Commercial Analysis",
     skills: [
-      { name: "SQL", level: 92 },
-      { name: "Python", level: 88 },
-      { name: "ETL", level: 85 },
-      { name: "Data Cleaning", level: 90 },
-      { name: "Git & GitHub", level: 80 },
+      "Pricing, Cost & Profitability Analysis",
+      "Revenue & Performance Reporting",
+      "KPI Tracking",
+      "Commercial Decision Support",
     ],
   },
   {
-    category: "Analysis & Statistics",
+    category: "Core Competencies",
     skills: [
-      { name: "Data Analytics", level: 92 },
-      { name: "Statistics", level: 82 },
-      { name: "Data Visualization", level: 93 },
-      { name: "Machine Learning Basics", level: 65 },
-      { name: "Excel", level: 90 },
+      "Data Consolidation from Multiple Sources",
+      "Data Cleaning & Validation",
+      "Monthly / Ad Hoc Reporting Cycles",
+      "Stakeholder Communication",
+      "Managing Inbound Data Requests",
     ],
+  },
+  {
+    category: "Programming & Automation",
+    skills: ["Python (Data Analysis)"],
   },
 ];
 
-export const skillList: string[] = [
-  "Power BI",
-  "SQL",
-  "Python",
-  "Tableau",
-  "Excel",
-  "Power Query",
-  "DAX",
-  "ETL",
-  "Data Visualization",
-  "Data Analytics",
-  "Dashboard Design",
-  "Statistics",
-  "Machine Learning Basics",
-  "Git",
-  "GitHub",
-];
+export const skillList: string[] = skillCategories.flatMap((group) => group.skills);

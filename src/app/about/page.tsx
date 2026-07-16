@@ -45,24 +45,30 @@ export default function AboutPage() {
               </h1>
               <div className="mt-6 space-y-4 text-lg leading-relaxed text-ink/65 dark:text-paper/65">
                 <p>
-                  I&apos;m {site.firstName}, a Data Analyst based in {site.location}
-                  . I build dashboards, pipelines, and analyses that help teams
-                  understand what&apos;s actually happening in their business —
-                  and what to do about it.
+                  I&apos;m {site.firstName}, a Commercial Data Analyst based in{" "}
+                  {site.location}. I build dashboards and use SQL and Power
+                  Query to extract, consolidate, and analyse data for revenue,
+                  pricing, and performance reporting — most recently as a Data
+                  Analyst at Entralon Real Estate, and before that in pricing,
+                  cost, and profitability analysis at RAAK Hydraulic.
                 </p>
                 <p>
-                  My path started in Mechanical Engineering, where I learned to
-                  break complex, ambiguous problems down into measurable,
-                  testable pieces. That analytical discipline is what drew me
-                  to data: the same rigor, applied to business questions
-                  instead of physical systems. Today I work primarily in
-                  Power BI, SQL, and Python, with a focus on HR, recruitment,
-                  sales, and customer analytics.
+                  My path started in Mechanical Engineering at London South
+                  Bank University, where I learned to break complex, ambiguous
+                  problems down into measurable, testable pieces. That
+                  analytical discipline is what drew me to data — the same
+                  rigor, applied to commercial questions instead of physical
+                  systems. I later completed a Data Analytics Graduate
+                  Certificate at BrainStation, and today work primarily in
+                  Power BI, Power Query, SQL, and Python.
                 </p>
                 <p>
-                  I care about dashboards that get used, not just admired —
-                  which means starting every project with the business
-                  question, not the chart type.
+                  I&apos;m comfortable managing inbound analytics requests
+                  independently and prioritising competing demands in
+                  fast-paced, client-facing environments — and I care about
+                  reporting that moves teams from manual processes toward
+                  clearer, dashboard-led insight, not dashboards that just
+                  look good.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -148,7 +154,7 @@ export default function AboutPage() {
             title="Skills"
             description="The tools and techniques I use to turn raw data into decisions."
           />
-          <div className="mt-14 grid gap-10 sm:grid-cols-3">
+          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {skillCategories.map((group) => (
               <div key={group.category}>
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-ink/40 dark:text-paper/40">
@@ -157,10 +163,10 @@ export default function AboutPage() {
                 <ul className="mt-4 space-y-3">
                   {group.skills.map((skill) => (
                     <li
-                      key={skill.name}
+                      key={skill}
                       className="text-[15px] font-medium text-ink dark:text-paper"
                     >
-                      {skill.name}
+                      {skill}
                     </li>
                   ))}
                 </ul>
