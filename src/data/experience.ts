@@ -3,20 +3,6 @@ import { ExperienceItem } from "@/types";
 // Sourced directly from Asma's CV.
 export const experience: ExperienceItem[] = [
   {
-    role: "Commercial Retail Associate (Via Agency)",
-    company: "Jimmy Choo",
-    location: "London, United Kingdom",
-    period: "Mar 2026 — Present",
-    current: true,
-    description:
-      "Flexible, contract-basis client service and operational support within a luxury retail environment.",
-    highlights: [
-      "Provide flexible, premium client service and operational support on a contract basis within luxury retail environments",
-      "Utilise in-store inventory systems to monitor stock levels and ensure accurate data tracking against daily sales targets",
-      "Maintain strong, professional communication in fast-paced, client-facing settings, effectively managing ambiguity",
-    ],
-  },
-  {
     role: "Data Analyst",
     company: "Entralon Real Estate",
     location: "London, United Kingdom",
@@ -30,6 +16,20 @@ export const experience: ExperienceItem[] = [
       "Cleaned, structured, and validated complex data from multiple sources to ensure accuracy and a single source of truth for reporting",
       "Partnered with senior stakeholders to move reporting from manual processes toward clearer, more consistent, dashboard-led insight",
       "Managed inbound analytics requests independently, prioritising competing demands in a fast-paced environment",
+    ],
+  },
+  {
+    role: "Commercial Retail Associate (Via Agency)",
+    company: "Jimmy Choo",
+    location: "London, United Kingdom",
+    period: "Jan 2022 — Jan 2023",
+    current: false,
+    description:
+      "Flexible, contract-basis client service and operational support within a luxury retail environment.",
+    highlights: [
+      "Provided flexible, premium client service and operational support on a contract basis within luxury retail environments",
+      "Utilised in-store inventory systems to monitor stock levels and ensure accurate data tracking against daily sales targets",
+      "Maintained strong, professional communication in fast-paced, client-facing settings, effectively managing ambiguity",
     ],
   },
   {
