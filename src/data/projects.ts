@@ -155,15 +155,18 @@ export const projects: Project[] = [
     label: "Personal Data Analytics Project",
     category: "SQL · Python",
     summary:
-      "A SQL query library against the Chinook sample database answering realistic BI questions — genre/artist performance, customer concentration, and sales rep performance.",
+      "SQL analysis against the Chinook sample database, answering the kind of one-off questions a BI team gets asked all the time — genre and artist performance, customer concentration, and sales rep performance.",
     businessProblem:
-      "Framed as a realistic BI analyst brief: stakeholders keep asking one-off questions — top genres, best customers, which sales rep manages the most revenue — that previously required custom spreadsheet work each time, with no reusable, documented approach.",
-    solution:
-      "Wrote a 9-query SQL library against the Chinook relational database covering joins across up to 4 tables, window functions (RANK, running SUM() OVER, LAG), a Pareto-style cumulative-share query, and an anti-join for cross-sell targeting — with every query's real output captured and a documented Power BI model on top.",
+      "Stakeholders kept coming back with one-off questions — top-selling genres, best customers, which rep was carrying the most revenue — and each one turned into a fresh round of manual spreadsheet work. Nothing was reusable, so the same numbers sometimes got recalculated a different way depending on who was asked, with no consistent way to answer the next question that came up.",
+    solution: [
+      "Pulled together genre, artist, and customer revenue in a handful of SQL queries against the Chinook database, so a question like 'who are our best customers' has one clear, repeatable answer instead of a fresh spreadsheet each time.",
+      "Used ranking and running-total logic to show not just who's on top, but how concentrated the revenue actually is — useful for knowing whether the business leans on a handful of big spenders or a broad base.",
+      "Checked the sales-rep and monthly figures for anything misleading before treating them as findings, and caught a pattern in the invoice dates that turned out to be an artifact of the sample data rather than a real trend.",
+    ],
     outcomes: [
-      "Rock generates 35.5% of total revenue ($826.65 of $2,328.60) — more than 2x the next genre",
-      "Every customer has already purchased Rock (0 results from the cross-sell anti-join), so cross-sell should target smaller genres instead",
-      "Identified and documented a synthetic-data artifact in the source (near-identical monthly invoice totals across 5 years) rather than reporting a false trend",
+      "Rock accounts for 35.5% of total revenue ($826.65 of $2,328.60) — more than double the next genre",
+      "Every customer has already bought a Rock track, so a Rock-focused cross-sell push would reach nobody new; a smaller genre is the better target",
+      "Monthly revenue turned out to be near-identical across five years — a quirk of how the sample data was generated, not a real trend, and worth flagging rather than reporting as one",
     ],
     technologies: ["SQL", "Python", "Data Analytics", "Statistics"],
     image: "/images/projects/sql-business-intelligence-analysis.png",
