@@ -76,14 +76,6 @@ export default function AboutPage() {
                   View my work
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Button>
-                <Button
-                  href={site.resumeUrl}
-                  variant="secondary"
-                  size="md"
-                  download="Asma-Babazadehkahrizi-CV.pdf"
-                >
-                  Download CV
-                </Button>
               </div>
             </div>
           </div>

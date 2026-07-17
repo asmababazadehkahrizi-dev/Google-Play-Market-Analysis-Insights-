@@ -42,7 +42,7 @@ timeline, skill bars) is hand-built and lives in `src/components/ui`.
 │   ├── python-data-cleaning-automation/
 │   └── sql-business-intelligence-analysis/
 ├── public/
-│   ├── documents/              # Downloadable CV + supplementary PDFs
+│   ├── documents/              # Supplementary PDFs
 │   ├── images/
 │   │   ├── projects/           # Real dashboard chart exports (copied from
 │   │   │                         projects/*/charts/), used on the site
@@ -160,7 +160,7 @@ Visit [http://localhost:3000](http://localhost:3000).
 All personal content lives in `src/data/*.ts` as typed objects — no CMS
 required, and no need to touch component code to update copy:
 
-- `data/site.ts` — name, tagline, bio, location, resume link, social URLs
+- `data/site.ts` — name, tagline, bio, location, social URLs
 - `data/projects.ts` — the 6 case studies (business problem, solution,
   outcomes, tech, GitHub/demo links)
 - `data/skills.ts` — skill categories and proficiency levels
@@ -177,10 +177,6 @@ required, and no need to touch component code to update copy:
   (`public/images/profile-placeholder.svg`) by design, until a real photo is
   supplied. Swap the file and update the `alt` text in `hero.tsx` and
   `about/page.tsx` when ready.
-- **CV / resume** (`public/documents/Asma-Babazadehkahrizi-CV.pdf`) — still a
-  placeholder PDF. Replace it with a real CV export, and update
-  `experience.ts` / `education.ts` / the About page copy to match it exactly
-  once available.
 - **OG image** (`public/images/og-image.svg`) — a simple placeholder social
   share card; swap for a designed one before publishing widely.
 

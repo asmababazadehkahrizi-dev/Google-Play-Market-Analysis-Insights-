@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, MapPin } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { AnimatedBackground } from "@/components/home/animated-background";
@@ -67,15 +67,6 @@ export function Hero() {
               <Button href="/projects" size="lg">
                 View Projects
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Button>
-              <Button
-                href={site.resumeUrl}
-                variant="secondary"
-                size="lg"
-                download="Asma-Babazadehkahrizi-CV.pdf"
-              >
-                Download CV
-                <Download className="h-4 w-4" aria-hidden="true" />
               </Button>
               <Button href="/contact" variant="ghost" size="lg">
                 Contact Me

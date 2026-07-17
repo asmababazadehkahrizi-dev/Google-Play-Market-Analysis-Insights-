@@ -15,7 +15,6 @@ export const site = {
   heroHeadline: "Turning data into decisions.",
   heroSubheadline:
     "Commercial Data Analyst in London building dashboards and reporting with Power BI, Power Query, SQL, and Python — for revenue, pricing, and performance analysis.",
-  resumeUrl: "/documents/Asma-Babazadehkahrizi-CV.pdf",
   keywords: [
     "Asma Babazadehkahrizi",
     "Commercial Data Analyst London",
