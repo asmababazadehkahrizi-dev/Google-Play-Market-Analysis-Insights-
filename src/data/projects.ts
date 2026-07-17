@@ -39,15 +39,18 @@ export const projects: Project[] = [
     label: "Personal Data Analytics Project",
     category: "Power BI · SQL · Python",
     summary:
-      "A recruitment source-effectiveness analysis on a public HR dataset — which sourcing channels produce hires who actually stay and perform.",
+      "A look at seven recruitment channels in a public HR dataset — which ones bring in people who stick around, and which just look good on a hiring report.",
     businessProblem:
-      "Framed as a realistic recruitment analytics brief: talent acquisition spends across seven-plus sourcing channels with no shared view of which ones actually produce employees who stay and perform well — sourcing budget is allocated on gut feel rather than evidence.",
-    solution:
-      "Cleaned and analyzed the public Human Resources Data Set (311 employees) in Python, wrote SQL with a RANK() window function and a correlated subquery to find each department's top source, and documented the equivalent Power BI data model and DAX measures.",
+      "Talent teams often split their budget across half a dozen job boards and channels without much evidence on which ones work. In this dataset, sourcing spend wasn't tied to how long a hire actually stayed — decisions came down to gut feel and channel reputation, not whether that channel's hires were still around a year later.",
+    solution: [
+      "Cleaned and analysed the Human Resources Data Set (311 employees) in Python, working out hire volume, termination rate, and engagement score by channel.",
+      "Used SQL with a RANK() window function to rank channels by volume, plus a correlated subquery to pull out each department's top hiring source.",
+      "Mapped the same figures into a Power BI model with DAX measures, so the comparison works as a filterable report rather than a static table.",
+    ],
     outcomes: [
-      "Indeed and LinkedIn are the highest-volume channels (87 and 76 hires), together over half of all hires",
-      "Employee Referral has the lowest termination rate among high-volume sources (16.1%) with above-average engagement",
-      "Google Search is 3rd by volume but has the highest termination rate at 61.2% — nearly double the company average",
+      "Indeed and LinkedIn bring in the most people — 87 and 76 hires — more than half the total between them",
+      "Employee Referral holds onto people better than any other high-volume channel: a 16.1% termination rate with above-average engagement scores",
+      "Google Search ranks third by volume but loses well over half its hires (61.2%) — almost double the company-wide rate",
     ],
     technologies: ["Power BI", "SQL", "Python", "DAX", "Data Analytics"],
     image: "/images/projects/recruitment-analytics-dashboard.png",
