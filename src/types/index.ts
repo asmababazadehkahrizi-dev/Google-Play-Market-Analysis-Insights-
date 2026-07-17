@@ -16,7 +16,7 @@ export interface Project {
   category: string;
   summary: string;
   businessProblem: string;
-  solution: string;
+  solution: string | string[];
   outcomes: string[];
   technologies: string[];
   image: string;

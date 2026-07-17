@@ -10,15 +10,18 @@ export const projects: Project[] = [
     label: "Personal Data Analytics Project",
     category: "Power BI · SQL · Python",
     summary:
-      "An attrition analytics build on the public IBM HR dataset — Power BI + SQL + Python identifying where and why employees are leaving.",
+      "An attrition analysis on the IBM HR dataset — where employees are leaving from, what's actually driving it, and who's most at risk of leaving next.",
     businessProblem:
-      "Framed as a realistic HR analytics brief: leadership wants to understand where attrition is concentrated, whether it's tied to overtime or compensation, and which employee segment is highest-risk — so retention effort can be targeted instead of applied evenly across the company.",
-    solution:
-      "Built a Python cleaning and KPI pipeline (pandas), a SQL layer with window functions (RANK, running totals) against a SQLite database, and a documented Power BI data model with DAX measures — all against the public IBM HR Analytics Employee Attrition dataset (1,470 employees).",
+      "Companies often only look at attrition once a year, by which point the pattern has already cost them good people. I wanted to know whether turnover was spread evenly across the business or concentrated in specific teams and conditions, and whether there was a way to flag at-risk employees early enough to act on it, rather than explaining the numbers after they'd already left.",
+    solution: [
+      "Cleaned the raw employee records and worked out attrition, tenure, and satisfaction metrics in Python (pandas).",
+      "Queried the data in SQL against a SQLite database, using window functions like RANK and running totals to rank departments and track attrition by tenure band.",
+      "Modelled the same data for Power BI and wrote out the DAX measures, so the analysis can be rebuilt as a live dashboard.",
+    ],
     outcomes: [
-      "Overall attrition rate is 16.1% (237 of 1,470 employees)",
-      "Overtime is the strongest single signal: 30.5% attrition vs. 10.4% for non-overtime staff, despite near-identical pay",
-      "A narrow 56-person flight-risk segment (overtime + low satisfaction + <3yrs tenure) leaves at 55.4%, vs. 16.1% company-wide",
+      "Attrition sits at 16.1% overall — 237 people out of 1,470",
+      "Overtime is the biggest single factor: staff working overtime leave at 30.5%, versus 10.4% for everyone else, even though the pay is nearly identical",
+      "A small group — overtime, low satisfaction, under three years' tenure, just 56 people — leaves at 55.4%, more than three times the company average",
     ],
     technologies: ["Power BI", "SQL", "Python", "DAX", "Data Cleaning", "Data Visualization"],
     image: "/images/projects/hr-analytics-dashboard.png",

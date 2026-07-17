@@ -132,9 +132,23 @@ export default function ProjectDetailPage({
               <h2 className="text-sm font-semibold uppercase tracking-wide text-ink/40 dark:text-paper/40">
                 Solution
               </h2>
-              <p className="mt-4 text-lg leading-relaxed text-ink/75 dark:text-paper/75">
-                {project.solution}
-              </p>
+              {Array.isArray(project.solution) ? (
+                <ul className="mt-4 space-y-3">
+                  {project.solution.map((step) => (
+                    <li
+                      key={step}
+                      className="flex gap-3 text-lg leading-relaxed text-ink/75 dark:text-paper/75"
+                    >
+                      <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      {step}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-4 text-lg leading-relaxed text-ink/75 dark:text-paper/75">
+                  {project.solution}
+                </p>
+              )}
             </div>
           </div>
 
