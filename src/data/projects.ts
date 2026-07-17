@@ -68,15 +68,18 @@ export const projects: Project[] = [
     label: "Personal Data Analytics Project",
     category: "Power BI · SQL · Python",
     summary:
-      "A retail order-book analysis on the public Sample Superstore dataset — where revenue comes from, and where discounting quietly destroys margin.",
+      "Retail order data from the Sample Superstore dataset, broken down by region, category, and discount level to see where revenue was actually turning into profit.",
     businessProblem:
-      "Framed as a realistic sales analytics brief: the business has healthy total revenue but wants to understand why overall profit margin is thin, which regions/categories are actually profitable once discounting is accounted for, and where over-discounting is happening.",
-    solution:
-      "Cleaned and analyzed ~10,800 order lines (Sample Superstore) in Python, wrote SQL with RANK() and a running-total window function for a monthly trend, and documented a full Power BI star schema (fact + customer/product/geography/date dimensions) with DAX measures.",
+      "Revenue looked healthy on the surface, but overall margin was thin, and nobody had broken down why. The question was which regions and categories were genuinely profitable once discounting was factored in, rather than just which ones sold the most, and where discounts were being applied without much thought to what they were doing to margin.",
+    solution: [
+      "Cleaned close to 10,800 order lines from the Sample Superstore dataset in Python and worked out profit margin by discount band.",
+      "Wrote SQL using RANK() and a running-total window function to rank regions by revenue and track the monthly sales trend.",
+      "Built out the Power BI data model — a fact table plus customer, product, geography, and date dimensions — with the DAX measures behind it.",
+    ],
     outcomes: [
-      "Discount above 20% flips orders unprofitable: margin falls from 34% (no discount) to -113.9% at 50%+ discount",
-      "Three sub-categories are net loss-makers — Tables alone lose $17,725 on $207K sales at a 26.1% average discount",
-      "Central region has the weakest margin (7.9%) despite being the 3rd-largest region by sales",
+      "Margin turns negative past a 20% discount — from 34% with no discount down to -113.9% once discounts hit 50% or more",
+      "Three sub-categories lose money outright; Tables is the worst of them, down $17,725 on $207K of sales at a 26.1% average discount",
+      "Central is the third-biggest region by sales but has the weakest margin of any region, at just 7.9%",
     ],
     technologies: ["Power BI", "SQL", "Python", "DAX", "Excel", "Data Visualization"],
     image: "/images/projects/sales-performance-dashboard.png",
