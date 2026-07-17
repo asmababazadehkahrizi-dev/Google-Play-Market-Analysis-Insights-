@@ -128,13 +128,16 @@ export const projects: Project[] = [
     summary:
       "A reusable Python cleaning pipeline built against the notoriously messy Google Play Store Apps dataset, with an auditable before/after data-quality report.",
     businessProblem:
-      "Framed as a realistic data engineering brief: analysts spend significant time manually cleaning inconsistent exports before any analysis can start — mismatched formats, duplicate records, and in this dataset's case, a real scraping bug that silently corrupts rows.",
-    solution:
-      "Wrote importable, testable Python functions (not a one-off script) to parse messy installs/price/size text into numerics, detect and repair a real column-shift scraping bug affecting row-level data integrity, deduplicate 1,181 repeated app listings, and produce an auditable QualityReport — then layered SQL analysis and a documented Power BI model on the cleaned output.",
+      "Every export of this dataset came in messy — inconsistent number formats, duplicate listings, and one row where a scraping error had silently shifted every field along by one column. Cleaning it by hand each time would take hours and still miss things like the shifted row, so the real task was building something repeatable that could catch errors a person would scroll straight past.",
+    solution: [
+      "Wrote Python functions, not a one-off script, to turn the messy installs, price, and size fields into real numbers that could actually be calculated on.",
+      "Tracked down and fixed a scraping bug where one row's fields had all shifted one column to the left, and removed 1,181 duplicate app listings, keeping the most-reviewed version of each.",
+      "Ran SQL checks against the cleaned data to confirm ratings fell within a valid range, then modelled the same output for Power BI with the DAX measures behind it.",
+    ],
     outcomes: [
-      "1,181 duplicate app listings resolved (10,841 → 9,660 rows), keeping the most-reviewed version of each app",
-      "1 confirmed data-corruption row detected and repaired (a column-shift scraping bug that would otherwise silently misread Rating as Category)",
-      "0 out-of-range ratings remain post-clean, verified via SQL against the cleaned database",
+      "1,181 duplicate app listings removed, taking the dataset from 10,841 rows down to 9,660, always keeping the most-reviewed copy of each app",
+      "One row had corrupted data from the scraping bug — a shifted column that would have silently mislabelled a rating as a category — found and fixed",
+      "Zero ratings fall outside the valid 1–5 range in the cleaned data, confirmed by running a check against the database afterwards",
     ],
     technologies: ["Python", "SQL", "ETL", "Data Cleaning", "Git"],
     image: "/images/projects/python-data-cleaning-automation.png",
