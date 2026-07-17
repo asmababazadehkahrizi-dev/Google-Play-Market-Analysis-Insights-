@@ -99,13 +99,16 @@ export const projects: Project[] = [
     summary:
       "An RFM customer segmentation on 541,909 real transactions (UCI Online Retail) identifying which customers drive revenue — and which are slipping away.",
     businessProblem:
-      "Framed as a realistic retention/marketing analytics brief: the business treats all customers roughly the same in retention campaigns, with no shared, data-backed view of which customers are high-value, which are at risk of churning, and where to focus limited retention budget.",
-    solution:
-      "Built a Python RFM (Recency, Frequency, Monetary) segmentation on the UCI Online Retail dataset, quartile-scored each customer and rule-mapped scores to six named segments, then wrote SQL using NTILE() for decile analysis and LAG() for month-over-month revenue change, with a documented Power BI model on top.",
+      "Retention campaigns here treated every customer the same — same offer, same channel, same spend — regardless of whether they'd bought once or fifty times. There was no simple way to tell which customers were actually worth protecting, which had already started drifting away, and where a limited retention budget would do the most good.",
+    solution: [
+      "Scored every customer on recency, frequency, and spend (RFM) in Python, then grouped them into six segments — Champions, Loyal, At Risk, and so on.",
+      "Queried the data in SQL with NTILE() to split customers into revenue deciles and LAG() to track month-over-month revenue change.",
+      "Carried the same segments into Power BI, with the DAX measures behind them, so the split can be filtered and explored rather than read off a spreadsheet.",
+    ],
     outcomes: [
-      "The top 10% of customers generate 61.5% of total revenue (£8.89M across 4,338 customers)",
-      "Champions (11% of customers) drive £4.42M — half of all revenue — averaging £9,048 revenue per customer vs. £283 for Hibernating customers",
-      "646 'At Risk' customers include individuals worth over £44,000 lifetime, still recoverable with the right outreach",
+      "The top 10% of customers account for 61.5% of all revenue — £8.89M across 4,338 customers",
+      "Champions, just 11% of the customer base, bring in £4.42M on their own — half of total revenue — averaging £9,048 each against £283 for a Hibernating customer",
+      "646 customers sit in the 'At Risk' segment, some worth over £44,000 lifetime and still recoverable with the right outreach",
     ],
     technologies: ["Power BI", "SQL", "Python", "Statistics", "Data Analytics", "DAX"],
     image: "/images/projects/customer-analytics-dashboard.png",
